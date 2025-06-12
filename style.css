@@ -1,0 +1,135 @@
+/* Global Styles for Dear Human */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,500&family=Nunito:wght@300;400;600&display=swap');
+
+:root {
+  --primary-color: #f6e9e4; /* soft tone matching logo */
+  --bg-color: #fffaf7;
+  --text-color: #333;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.logo img {
+  max-height: 50px;
+  height: auto;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  width: 24px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  background: var(--text-color);
+  margin: 4px 0;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  color: #2e2e2e;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 2rem 0 1rem;
+  font-style: italic;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  nav ul {
+    position: absolute;
+    top: 60px;
+    right: 1rem;
+    background-color: var(--primary-color);
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: none;
+  }
+  nav ul.open {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 2rem 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}

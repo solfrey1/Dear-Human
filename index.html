@@ -4,86 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dear Human</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #fffaf7;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    nav {
-      background-color: #f6e9e4;
-      padding: 1rem;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .container {
-      max-width: 700px;
-      margin: 0 auto;
-      padding: 4rem 1rem;
-    }
-
-    h1, h2 {
-      font-family: 'Playfair Display', serif;
-      color: #2e2e2e;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-      text-align: center;
-      margin: 2rem 0 1rem;
-      font-style: italic;
-    }
-
-    p {
-      font-size: 1.1rem;
-      margin-bottom: 1.5rem;
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        padding: 2rem 1rem;
-      }
-
-      h1 {
-        font-size: 2rem;
-      }
-
-      p {
-        font-size: 1rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Origin Story</a>
-    <a href="newsletter.html">Newsletter</a>
-    <a href="stories.html">Real Human Stories</a>
-    <a href="nominate.html">Nominate Someone</a>
-  </nav>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="Dear Human Logo2.png" alt="Dear Human logo">
+      </a>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul id="nav-links">
+          <li><a href="index.html">Origin Story</a></li>
+          <li><a href="newsletter.html">Newsletter</a></li>
+          <li><a href="stories.html">Real Human Stories</a></li>
+          <li><a href="nominate.html">Nominate</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <div class="container">
     <h1>Dear Human</h1>
@@ -122,5 +65,6 @@
 
     <h2>Welcome to Dear Human.</h2>
   </div>
+  <script src="script.js" defer></script>
 </body>
 </html>
